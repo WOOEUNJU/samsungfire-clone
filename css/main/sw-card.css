@@ -8,7 +8,7 @@
 .sw-card .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #444;
+  background: red;
   display: flex;
   justify-content: center;
   align-items: center;
