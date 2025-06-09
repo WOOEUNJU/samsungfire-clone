@@ -19,17 +19,10 @@
   width: 100%;
   max-width: 776px;
 }
-
-.main-right {
-  position: relative;
-  width: 335px;
-}
-
 /* 로그인 메뉴 모바일 */
 .login-wrap-mb {
   display: none;
 }
-
 /* 자주찾는 메뉴 모바일 */
 .shortcut-wrap-mb {
   display: none;
@@ -130,6 +123,95 @@
   box-shadow: 0 1rem 2.4rem 0 rgba(0, 0, 0, 0.18);
   transform: translateY(-2rem);
 }
+/* 알려드려요 고객지원 영역 */
+.notice-customer-section {
+  position: relative;
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.notice-header,
+.customer-header {
+  position: relative;
+  padding-left: 0.4rem;
+  margin-bottom: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.notice-customer-section h4 {
+  font-family: "SS-bold";
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.notice {
+  position: relative;
+  width: 372px;
+  /* flex-shrink: 0; */
+  flex: 0 0 372px;
+}
+.notice-header a {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #868a93;
+}
+.notice-header a:hover span {
+  text-decoration: underline;
+}
+.notice ul {
+  position: relative;
+  width: 100%;
+  padding: 0 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.notice ul li {
+}
+.notice ul li a {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.notice ul li:hover a {
+  text-decoration: underline;
+}
+.customer {
+  position: relative;
+  width: 372px;
+  /* flex-shrink: 0; */
+  flex: 0 0 372px;
+}
+.customer ul {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 1.6rem;
+}
+.customer ul li {
+  position: relative;
+  width: calc(50% - 0.8rem);
+}
+.customer ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  background-color: #fff;
+  border: 1px solid #e5e5e8;
+  border-radius: 1.2rem;
+  padding: 1.5rem 2rem;
+}
+.customer ul li:hover a {
+  border-color: #5a5b63;
+}
 
 /* 사이드 배너 모바일 */
 .side-banner-wrap-mb {
@@ -147,15 +229,6 @@
   border-radius: 2rem;
   border: 1px solid #e5e5e8;
 }
-
-.login-wrap {
-  position: relative;
-  padding: 3rem 2rem 2rem;
-  background-color: #fff;
-  border-radius: 2rem;
-  border: 1px solid #e5e5e8;
-}
-
 .login-wrap .hello {
   position: relative;
   padding: 0 0.4rem;
@@ -166,18 +239,17 @@
 .login-wrap .hello img {
   width: 28px;
   height: 28px;
+  object-fit: contain;
 }
 .login-wrap .hello span {
   font-family: "SS-bold";
   font-size: 1.8rem;
   line-height: 3rem;
 }
-
 .login-wrap .btn {
   position: relative;
-  padding: 0 0 0.6rem;
+  padding: 0 0.6rem;
 }
-
 .login-wrap .btn a {
   padding: 1.3rem 1.6rem;
   display: flex;
@@ -187,27 +259,27 @@
   font-family: "SS-bold";
   font-size: 1.8rem;
   color: #fff;
-  border-radius: 1.2rem;
   line-height: 2rem;
+  border-radius: 1.2rem;
 }
-
 .login-wrap .etc {
   position: relative;
   margin-top: 2.4rem;
   padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
 }
-
 .login-wrap .etc li {
 }
-
 .login-wrap .etc li:last-child {
   padding-left: 2.5rem;
-  border-left: 1px solid #868a93;
+  border-left: 1px solid #e5e5e8;
 }
-
-.login-wrap {
+.login-wrap .etc li a {
+  font-size: 1.6rem;
+  color: #5a5b63;
 }
-
 .shortcut-wrap {
   position: relative;
   margin-top: 3rem;
